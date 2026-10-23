@@ -1,0 +1,243 @@
+@font-face {
+  font-family: 'Poketmonster';
+  src: url('police_ecriture/pokemon/Pokemon\ Solid.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+ 
+:root {
+  --pokedex-red: #DC2626;
+  --pokedex-red-dark: #991B1B;
+  --pokedex-blue: #38BDF8;
+  --pokedex-bg: #111827;
+  --pokedex-card: #F3F4F6;
+  --pokedex-yellow: #FACC15;
+  --pokedex-text: #FFFFFF;
+  --pokedex-text-dark: #1F2937;
+}
+
+form { 
+    display: flex;
+    align-items: center; 
+    width: 100%; 
+    padding: 6px 6px 6px 22px; 
+    background: #fff; 
+    border: 3px solid #1d1d2b; 
+    border-radius: 999px; 
+    box-shadow: 5px 5px 0 #1d1d2b; 
+}
+
+body{
+    background-color: var(--pokedex-red);
+    color: var(--pokedex-text);
+}
+header{
+    background-color: var(--pokedex-red-dark);
+}
+
+form:focus-within { 
+    box-shadow: 5px 5px 0 #ffcb05; 
+}
+ 
+input { 
+    flex: 1; 
+    min-width: 0; 
+    border: 0; 
+    outline: 0; 
+    font: inherit; 
+    font-size: 1.2rem; 
+}
+
+.logo { 
+    font-size: 1.6rem; 
+    color: var(--rouge); 
+    text-decoration: none; 
+    width: 200px; 
+    height: auto;
+    object-fit: contain;
+}
+
+.liens { 
+    display: flex; 
+    gap: 20px; 
+    margin: 0; 
+    padding: 0; 
+    list-style: none; 
+}
+
+.liens a { 
+    color: var(--encre); 
+    text-decoration: none; 
+    font-size: 1.1rem; 
+}
+
+.liens a:hover {
+     color: var(--bleu); 
+}
+ 
+/* Pokéball */
+button { 
+    position: relative; 
+    width: 48px; 
+    height: 48px; 
+    border: 3px solid #1d1d2b; 
+    border-radius: 50%; 
+    cursor: pointer; 
+    background: linear-gradient(#ee1515 0 44%, #1d1d2b 44% 56%, #fff 56%); 
+    transition: transform .4s; 
+}
+button::after { 
+    content: ""; 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    width: 14px; 
+    height: 14px; 
+    transform: translate(-50%, -50%); 
+    background: #fff; 
+    border: 3px solid #1d1d2b; 
+    border-radius: 50%; 
+}
+button:hover { 
+    transform: rotate(360deg); 
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 12px 24px;
+    border-bottom: 4px solid var(--encre);
+}
+
+
+.logo_pokemon{
+    width: 200px;
+    justify-self: start;
+}   
+
+.logo_youtube{
+    height: 50px;
+    justify-self: end;
+    
+}
+
+.titre{
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 2px;
+}
+
+.pokemon{
+    height: 150px;
+    width: auto;
+    object-fit: contain;
+}
+
+.cards {
+    display: inline-block;
+    gap: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    /*background: rgba(182, 181, 181, 0.4);*/
+    background-color: var(--pokedex-card);
+    padding: 5%;
+    color: var(--pokedex-text-dark);
+}
+
+.cards:hover{
+    box-shadow: 5px 2.5px 2.5px rgb(82, 81, 81);
+    transition: 0.3s;
+}
+
+.card {
+    width: 32%;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+
+
+.afficher_cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;    
+}
+
+
+
+#card1:hover { 
+    background-color: #0d9c31;    
+}
+
+#card2:hover { 
+    background-color: #0a6c23;
+}
+
+#card3:hover { 
+    background-color: #095522;
+}
+
+#card4:hover { 
+    background-color: #c64017; 
+}
+
+#card5:hover { 
+    background-color: #bd3305; 
+}
+
+#card6:hover { 
+    background-color: #b70000; 
+}
+
+#card7:hover { 
+    background-color: #078fad; 
+}
+
+#card8:hover { 
+    background-color: #085eb4; 
+}
+
+#card9:hover {
+    background-color: #0d2ba4; 
+}
+
+#card10:hover { 
+    background-color: #1d7823; 
+}
+
+#card11:hover { 
+    background-color: #15aa04; 
+}
+
+#card12:hover { 
+    background-color: #6d29cb;
+}
+
+#card13:hover { 
+    background-color: #45545e;
+}
+
+#card14:hover { 
+    background-color: #a5bd18;
+}
+
+#card15:hover { 
+    background-color: #cac711;
+}
+.card img {
+    max-width: 100%;      
+    height: auto;
+}
+
+.contenu {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+h1{
+    font-family: Poketmonster;
+    letter-spacing: 3px;
+}

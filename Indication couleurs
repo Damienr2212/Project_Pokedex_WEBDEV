@@ -1,0 +1,158 @@
+🎨 Palette de couleurs pour un site Pokédex
+Rouge Pokédex — #DC2626
+
+Couleur principale du boîtier, du header et des boutons.
+
+CSS : background-color: #DC2626;
+
+Rouge foncé — #991B1B
+
+Pour les bordures, les ombres et les effets au survol.
+
+CSS : border-color: #991B1B;
+
+Bleu écran — #38BDF8
+
+Pour l'écran du Pokédex, les filtres et les zones de recherche.
+
+CSS : background-color: #38BDF8;
+
+Noir bleuté — #111827
+
+Pour le fond du site en mode sombre.
+
+CSS : background-color: #111827;
+
+Gris clair — #F3F4F6
+
+Pour les cartes Pokémon et les panneaux de contenu.
+
+CSS : background-color: #F3F4F6;
+
+Jaune — #FACC15
+
+Pour les boutons secondaires, les étoiles et les éléments à mettre en valeur.
+
+CSS : background-color: #FACC15;
+
+🖥️ Exemple d'interface Pokédex
+POKÉDEX
+Encyclopédie Pokémon
+
+Rechercher un Pokémon...
+
+File:0001Bulbasaur.png - Bulbapedia, the community-driven Pokémon encyclopedia
+#001 Bulbizarre
+Plante
+
+Poison
+
+File:0004Charmander.png - Bulbagarden Archives
+#004 Salamèche
+Feu
+
+Aperçu conceptuel — couleurs inspirées de l'univers Pokémon.
+
+💻 Code CSS prêt à utiliser
+Tu peux définir toutes les couleurs au même endroit pour les réutiliser facilement dans ton site.
+
+css
+
+:root {
+  --pokedex-red: #DC2626;
+  --pokedex-red-dark: #991B1B;
+  --pokedex-blue: #38BDF8;
+  --pokedex-bg: #111827;
+  --pokedex-card: #F3F4F6;
+  --pokedex-yellow: #FACC15;
+  --pokedex-text: #FFFFFF;
+  --pokedex-text-dark: #1F2937;
+}
+
+body {
+  margin: 0;
+  background: var(--pokedex-bg);
+  color: var(--pokedex-text);
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background: var(--pokedex-red);
+  padding: 20px;
+}
+
+.pokemon-card {
+  background: var(--pokedex-card);
+  color: var(--pokedex-text-dark);
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.search-bar {
+  background: var(--pokedex-blue);
+  color: var(--pokedex-text-dark);
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+button {
+  background: var(--pokedex-yellow);
+  color: var(--pokedex-text-dark);
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+🌈 Couleurs supplémentaires pour les types Pokémon
+Pour afficher les types de Pokémon dans ton Pokédex, voici une palette classique :
+
+Type
+
+Couleur
+
+Code HTML
+
+🔥 Feu
+
+#F08030
+
+💧 Eau
+
+#6890F0
+
+🌿 Plante
+
+#78C850
+
+⚡ Électrik
+
+#F8D030
+
+👻 Spectre
+
+#705898
+
+🐉 Dragon
+
+#7038F8
+
+☠️ Poison
+
+#A040A0
+
+🪨 Roche
+
+#B8A038
+
+🌑 Ténèbres
+
+#705848
+
+⚪ Normal
+
+#A8A878
+
+Mon conseil : utilise le rouge #DC2626 pour l'identité du site, 
+le noir #111827 pour le fond et les couleurs propres aux types pour les badges. 
+Tu obtiendras un Pokédex moderne, lisible et reconnaissable.

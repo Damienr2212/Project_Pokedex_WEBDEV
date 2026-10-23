@@ -1,0 +1,185 @@
+@font-face {
+  font-family: 'Poketmonster';
+  src: url('police_ecriture/pokemon/Pokemon\ Solid.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+ 
+:root {
+  --pokedex-red: #DC2626;
+  --pokedex-red-dark: #991B1B;
+  --pokedex-blue: #38BDF8;
+  --pokedex-bg: #111827;
+  --pokedex-card: #F3F4F6;
+  --pokedex-yellow: #FACC15;
+  --pokedex-text: #FFFFFF;
+  --pokedex-text-dark: #1F2937;
+}
+
+form { 
+    display: flex;
+    align-items: center; 
+    width: 100%; 
+    padding: 6px 6px 6px 22px; 
+    background: #fff; 
+    border: 3px solid #1d1d2b; 
+    border-radius: 999px; 
+    box-shadow: 5px 5px 0 #1d1d2b; 
+}
+
+body{
+    background-color: var(--pokedex-red);
+    color: var(--pokedex-text);
+}
+header{
+    background-color: var(--pokedex-red-dark);
+}
+
+form:focus-within { 
+    box-shadow: 5px 5px 0 #ffcb05; 
+}
+ 
+input { 
+    flex: 1; 
+    min-width: 0; 
+    border: 0; 
+    outline: 0; 
+    font: inherit; 
+    font-size: 1.2rem; 
+}
+
+/* Pokéball */
+button { 
+    position: relative; 
+    width: 48px; 
+    height: 48px; 
+    border: 3px solid #1d1d2b; 
+    border-radius: 50%; 
+    cursor: pointer; 
+    background: linear-gradient(#ee1515 0 44%, #1d1d2b 44% 56%, #fff 56%); 
+    transition: transform .4s; 
+}
+button::after { 
+    content: ""; 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    width: 14px; 
+    height: 14px; 
+    transform: translate(-50%, -50%); 
+    background: #fff; 
+    border: 3px solid #1d1d2b; 
+    border-radius: 50%; 
+}
+button:hover { 
+    transform: rotate(360deg); 
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 12px 24px;
+    border-bottom: 4px solid var(--encre);
+}
+
+.logo_pokemon{
+    width: 200px;
+    justify-self: start;
+}   
+
+.logo_youtube{
+    height: 50px;
+    justify-self: end;
+    
+}
+
+.detail_pokemon{
+    border: 1px black solid ;
+    padding-top: 10px;
+}
+
+.pokemon{
+    border: 1px solid black;
+    border-radius: 10px;
+    display: inline-block;
+    background-image: url('images/fond_pokedex.png') ;
+    background-size: cover;
+    padding-top: 15% ;
+}
+
+
+.info_pokemon{
+    border: 1px solid black;
+    display: inline-block; 
+    place-items: center; 
+    min-height: 100vh; 
+    margin: 0; 
+    background: #DC2626; 
+    font-family: system-ui, sans-serif; 
+}
+.info_pokemon h2{
+    text-align: center;
+    color: var(--pokedex-text-dark);
+    font-family: Poketmonster;
+    color: black;
+    letter-spacing: 5px;
+    font-size: 70px;
+}
+.stats { 
+    width: 90%; 
+    max-width: 550px; 
+    background: #fff; 
+    border: 1px solid #c9d6e8; 
+    color: #222; 
+}
+.stats h3 {
+    margin: 0; 
+    padding: 12px 16px;
+    background: #cfe0f5; 
+    color: #2a5d8f;
+    font-size: 1.1rem; 
+    font-weight: 400; 
+    font-variant: small-caps;
+}
+
+.stat {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    align-items: center;
+    padding: 8px 0; 
+    border-top: 1px solid #e3e3e3;
+  }
+
+.stat span{
+    text-align: center;
+}
+
+.barre{
+    height: 20px;
+    margin-right: 12px;
+    background: #f1f1f1f1;
+    border: 1px solid #e3e3e3;
+}
+.barre b {
+    display: block; 
+    height: 100%; 
+    box-sizing: border-box; 
+    min-width: 36px;
+    width: calc(var(--val) / 255 * 100%);   /* 255 = valeur maximale d'une stat */
+    background: var(--couleur, #c80000);
+    color: #fff; 
+    font-size: .9rem; 
+    line-height: 20px; 
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(0,0,0,.4);
+}
+
+/* Couleurs : on ajoute une classe sur la barre */
+  .orange { --couleur: #c85000; }
+  .jaune  { --couleur: #c8a000; }
+  .vert   { --couleur: #4a9a2a; }
+  .bleu   { --couleur: #2a7fc8; }
+/* sans classe = rouge */
+
