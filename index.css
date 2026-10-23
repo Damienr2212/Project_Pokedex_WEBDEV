@@ -241,3 +241,8 @@ h1{
     font-family: Poketmonster;
     letter-spacing: 3px;
 }
+
+a {
+    text-decoration: none;
+    color: var(--pokedex-text-dark);
+}
