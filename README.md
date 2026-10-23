@@ -1,10 +1,4 @@
 # Project_Pokedex_WEBDEV
-Projet Pokedex WEBDEV ISEN3 
-
-<br>
-
-<h1>Projet de WEBDEV</h1>
-
 <p>Groupe :</p>
 
 <ul>
@@ -13,6 +7,7 @@ Projet Pokedex WEBDEV ISEN3
   <li>Damien Razon</li>
 </ul>
 
-<br>
+<h2>Content</h2>
 
+<p>Ce projet contient les 150 premiers Pokémons provenant de la première génération.</p>
 
