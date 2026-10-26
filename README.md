@@ -19,13 +19,13 @@
 <ul>
   <li>Changement au niveau de la page detail_bulbizare.html</li>
   <li>Ajout des cartes cliquablent</li>
+  <li>Finaliser la chaine d'evolution dans detail_bulbizare.html.</li>
 </ul>
 
 
 <h2>Modification a faire :</h2>
 
 <ul>
-  <li>Finaliser la chaine d'evolution dans detail_bulbizare.html.</li>
   <li>Ajouter le boutton cliquable sur toutes les cartes</li>
   <li>Ajouter les cartes manquantes avec les autres png de pokemons</li>
 </ul>
