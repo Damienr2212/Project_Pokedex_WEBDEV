@@ -16,6 +16,7 @@
   --pokedex-text: #FFFFFF;
   --pokedex-text-dark: #1F2937;
   --color-surface: #f6f1e4;
+  --color-text-light: #5c574c;
 }
 
 form { 
@@ -207,6 +208,16 @@ nav{
     justify-content: space-between;
     padding: .4rem 0;
     border-bottom: 1px solid rgba(0,0,0,.05);
+}
+
+.pokemon_info_label {
+    color: var(--color-text-light);
+    font-size: .85rem;
+}
+
+.pokemon_info_value {
+    color:  black;
+    font-size: .9rem;
 }
 
 /********** Alternative Forms ***********/
