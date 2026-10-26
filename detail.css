@@ -118,18 +118,25 @@ nav{
     border-radius: 12px;
 }
 
-.Evolution-detail {
-    text-align: center;
+.list_evo{
     display: flex;
+    text-align: center;
     justify-content: center;
     gap: .4rem;
     flex-wrap: wrap;
     padding: 1rem 0 .5rem;
 }
 
-.current-evolution {
+
+.evo_box {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: .6rem;
+}
+
+.evo_box-suivante {
+    display: flex;
     align-items: center;
     gap: .6rem;
 }
@@ -144,7 +151,6 @@ nav{
     border: 1px solid transparent;
     text-decoration: none;
     color: var(--pokedex-text-dark);
-    transition: background .2s, border-color .2s, transform .2s;
 }
 
 .next-evo {
@@ -170,7 +176,13 @@ nav{
 
 .fleche-evo-suivante{
     font-size: 1.5rem;
-    line-height: 
+    line-height: 1rem;
+}
+
+.evo-method {
+    font-size: .72rem;
+    font-weight: 700;
+    white-space: nowrap;
 }
 
 
