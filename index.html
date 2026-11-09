@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.cdnfonts.com/css/pocket-monster' rel='stylesheet'>   
     <link rel="stylesheet" href="index.css">
+    <script type="module" src="script.js" defer></script>
     <title>Pokedex</title>
 </head>
 <body>
@@ -13,8 +14,8 @@
         <nav>
             
             <a href="https://www.pokemon.com/fr"> <img class="logo_pokemon" src="/images/Logo_pokemon.png"> </a>
-            <form action="#" role="search">
-                <input type="search" name="q" placeholder="Rechercher…" aria-label="Rechercher">
+            <form onsubmit="return chercherPokemonParNom()" role="search">
+                <input type="text" name="q" placeholder="Rechercher…" aria-label="Rechercher">
                 <button type="submit" aria-label="Lancer la recherche"></button>
             </form>
             <a href="https://www.youtube.com/@pokemon"> <img class="logo_youtube" src="/images/logo_youtube_transparent.png" alt="pika_youtube"> </a>
@@ -180,7 +181,7 @@
             <div class="contenu">
                 <img class ="pokemon" src="images/Aspicot-RFVF.png">
                 <div class="texte">
-                    <p>L’aiguillon sur son front est très pointu. Il se cache dans les bois et les hautes herbes, où il se gave de feuilles.</p>
+                    <p>L'aiguillon sur son front est très pointu. Il se cache dans les bois et les hautes herbes, où il se gave de feuilles.</p>
                 </div>
             </div>
                 <p>Type : <img src="/imagestypes/Type_Insecte_EV.png" alt="Insecte"></p>
@@ -204,7 +205,7 @@
             <div class="contenu">
                 <img class ="pokemon" src="images/Dardargnan-RFVF.png">
                 <div class="texte">
-                    <p>Il se sert de ses trois aiguillons empoisonnés situés sur les pattes avant et l’abdomen pour attaquer sans relâche ses adversaires.</p>
+                    <p>Il se sert de ses trois aiguillons empoisonnés situés sur les pattes avant et l'abdomen pour attaquer sans relâche ses adversaires.</p>
                 </div>
             </div>
                 <p>Type : <img src="/imagestypes/Type_Insecte_EV.png" alt="Insecte"> <img src="/imagestypes/Type_Vol_EV.png" alt="Vol"> </p>
