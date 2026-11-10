@@ -17,6 +17,8 @@ Cartes: (objet)
         Vitesse
         PV
         Description
+        Cycle évolutif: 
+            Poke avant, niveau avant,avant, niveau avant, poke après, niveau après, poke après, niveau après
 
 Filtre :Fonction
     Entrees: Numero ; nom ; Types ; Taille ; Poid ; Attaque ; Attaque Spé ; Defense ; Defense Spé ; Vitesse ; pv ; Description

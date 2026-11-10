@@ -222,3 +222,33 @@ nav{
 
 /********** Alternative Forms ***********/
 
+.info-section2 {
+    background: #f4f1e4;    
+    border-radius: 1rem;     
+    padding: 2rem;           
+}
+
+.form {
+  text-align: center;     
+}
+
+.alternative-forms-grid {
+    display: flex;
+    flex-direction: row;     
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.alternative-form {
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    gap: .4rem;
+}
+
+.alternative-form img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
